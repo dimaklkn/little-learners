@@ -1,0 +1,83 @@
+.hero {
+  display: grid;
+  gap: 4rem;
+  padding-block-start: 12rem;
+  text-align: center;
+  @include breakpoint-up(xlarge) {
+    grid-template-columns: 1fr auto;
+    text-align: left;
+  }
+
+  &__img-container {
+    width: 22.4375rem;
+    height: 25.625rem;
+    background-color: $col-neutral-300;
+    background-image: url(../images/hero-Image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: $border;
+
+    @include breakpoint-up(large) {
+      width: 38.4375rem;
+      height: 41.4375rem;
+      margin-inline: auto;
+    }
+  }
+  &__text {
+    display: grid;
+    gap: 2rem;
+    align-self: center;
+  }
+
+  &__text-greetings {
+    display: grid;
+    gap: 2rem;
+    p {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    h2 {
+      line-height: 3.5rem;
+      span {
+        color: $col-accent;
+      }
+    }
+  }
+
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 2rem;
+    padding-inline: 5rem;
+    border: $border;
+    border-radius: 1rem;
+    background-color: $col-neutral-300;
+    box-shadow: 5px 5px $col-accent;
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      gap: 0;
+      padding-inline: 0;
+      justify-content: space-around;
+    }
+    h3 {
+      font-size: $font-l-mobile;
+    }
+    p {
+      font-size: $font-m-mobile;
+      padding-bottom: 1rem;
+      font-weight: 600;
+      @include breakpoint-up(large) {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__numbers-num {
+    border-bottom: $border;
+    @include breakpoint-up(large) {
+      border-bottom: 0;
+    }
+  }
+}

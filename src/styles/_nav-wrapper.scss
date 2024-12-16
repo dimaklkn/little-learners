@@ -1,0 +1,14 @@
+.nav-wrapper {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  gap: 1rem;
+  transition: 0.5s ease;
+  transition-property: transform, opacity;
+}
+
+.nav-hidden.nav-wrapper {
+  transform: translateX(-50%) translateY(-160px);
+  opacity: 0;
+}

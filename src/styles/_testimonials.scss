@@ -1,0 +1,55 @@
+.testimonials {
+  text-align: center;
+  display: grid;
+  gap: 4rem;
+
+  &__title {
+    display: grid;
+    gap: 1.5rem;
+    & button {
+      justify-self: center;
+    }
+  }
+
+  & nav {
+    display: flex;
+    gap: 3rem;
+    justify-self: center;
+  }
+}
+
+// carousel and feedback-card
+
+.carousel {
+  display: flex;
+  gap: 2rem;
+  padding-block-end: 5px;
+  align-items: center;
+
+  &__feedback {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: $border;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px $col-neutral-800;
+    background-color: $col-neutral-100;
+    z-index: -1;
+
+    &__img-container {
+      display: grid;
+      place-items: center;
+      & img {
+        border: $border;
+        border-radius: 50%;
+        background-color: $col-neutral-300;
+      }
+    }
+  }
+
+  &__feedback-stars {
+    justify-self: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+}

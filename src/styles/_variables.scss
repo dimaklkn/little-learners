@@ -1,0 +1,20 @@
+// colors
+$col-bg: hsl(20, 100%, 97%);
+$col-accent: hsl(22, 100%, 65%);
+$col-neutral-100: hsl(0, 0%, 100%);
+$col-neutral-300: hsl(21, 100%, 90%);
+$col-neutral-800: hsl(0, 0%, 15%);
+
+// typography
+$font-sm-mobile: 0.875rem;
+$font-m-mobile: 1rem;
+$font-l-mobile: 1.5rem;
+$font-xl-mobile: 1.875rem;
+
+$font-sm-desctop: 1rem;
+$font-m-desctop: 1.25rem;
+$font-l-desctop: 1.75rem;
+$font-xl-desctop: 3.375rem;
+
+// other
+$border: 2px solid $col-neutral-800;

@@ -1,0 +1,50 @@
+.questions {
+  text-align: center;
+  display: grid;
+  gap: 4rem;
+
+  &__title {
+    display: grid;
+    gap: 1.5rem;
+    & button {
+      justify-self: center;
+    }
+  }
+
+  &__answers-container {
+    display: grid;
+    gap: 1rem;
+    flex-direction: column;
+    @include breakpoint-up(large) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__answers {
+    display: grid;
+    gap: 1rem;
+    align-self: start;
+  }
+
+  details {
+    display: grid;
+    min-height: 110px;
+    text-align: left;
+    border: $border;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    p {
+      padding-top: 1rem;
+      border-top: $border;
+    }
+  }
+
+  details[open] {
+    background-color: $col-neutral-100;
+  }
+
+  summary {
+    font-weight: bold;
+    align-self: center;
+  }
+}

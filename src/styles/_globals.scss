@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+// ::-webkit-scrollbar {
+//   width: 0px;
+//   background: transparent; /* make scrollbar transparent */
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $col-bg;
+  color: $col-neutral-800;
+  font-family: "Onest", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: $font-m-mobile;
+  @include breakpoint-up(xlarge) {
+    font-size: $font-m-desctop;
+  }
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+h2 {
+  font-size: $font-xl-mobile;
+  font-weight: 700;
+  @include breakpoint-up(large) {
+    font-size: $font-xl-desctop;
+  }
+}
+
+h3 {
+  font-size: $font-l-mobile;
+  font-weight: 700;
+  @include breakpoint-up(large) {
+    font-size: $font-l-desctop;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $col-neutral-800;
+  cursor: pointer;
+}
+
+button {
+  width: fit-content;
+  padding: 0.5rem;
+  border: $border;
+  border-radius: 0.5rem;
+  background-color: $col-neutral-100;
+  font-size: $font-sm-mobile;
+  transition: background-color 0.3s ease-in-out;
+  @include breakpoint-up(large) {
+    font-size: $font-sm-desctop;
+  }
+  &:hover {
+    background-color: $col-neutral-300;
+  }
+}
+
+.app {
+  display: grid;
+  gap: 5rem;
+  padding-block-start: 1rem;
+  @include breakpoint-up(large) {
+    gap: 10rem;
+  }
+}
+
+.wrapper {
+  width: 22.4375rem;
+  margin-inline: auto;
+  display: grid;
+  justify-content: center;
+  @include breakpoint-up(large) {
+    width: 58rem;
+  }
+  @include breakpoint-up(xlarge) {
+    width: 81.5rem;
+  }
+}

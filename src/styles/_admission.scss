@@ -1,0 +1,18 @@
+.admission {
+  display: flex;
+  gap: 1rem;
+  place-items: center;
+  background: linear-gradient(
+    to right,
+    $col-accent 0%,
+    $col-neutral-300 15%,
+    $col-neutral-300 85%,
+    $col-accent 100%
+  );
+  padding-block: 0.5rem;
+  border: $border;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
